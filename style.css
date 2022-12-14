@@ -1,0 +1,14 @@
+#container{
+    border: 1px solid #ddd;
+    width: 400px;
+    height: 400px;
+}
+
+#con{
+    float: right;
+    width: 98px;
+    height: 98px;
+    border: 1px solid #ddd;
+}
+
+
