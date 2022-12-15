@@ -26,9 +26,19 @@ function get_black_color(){
   return color;
 };
 
+let a = 0;
+function color_choice_black(){
+  return a = 1;
+}
+
+
 [...document.querySelectorAll(".grid-item")].forEach((round) => {
   round.addEventListener("mouseover", function() {
-  round.style.background = 'rgb(0, 0, 0)';
+    if (a == 1){
+      round.style.background = get_rand_color();
+    } else {
+      round.style.background = get_black_color();
+    };
   });
 });
 
