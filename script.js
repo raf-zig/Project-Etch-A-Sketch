@@ -1,5 +1,4 @@
 let user_choice = prompt('Enter the desired grid size no more than 100', '');
-
 const container = document.getElementById("container");
 
 function makeRows(rows, cols) {
@@ -21,23 +20,21 @@ function get_rand_color(){
   return "#" + color ;
 };
 
-function get_black_color(){
-  let color = 'rgb(0, 0, 0)';
-  return color;
-};
-
 let a = 0;
-function color_choice_black(){
-  return a = 1;
-}
+let black_color_choice = () => a = 2;
+let multicolored_color_choice = () => a =1;
 
+function clear_color(){
+  const clean = document.querySelectorAll(".grid-item");
+  clean.forEach(el => el.style.background = 'white');
+};
 
 [...document.querySelectorAll(".grid-item")].forEach((round) => {
   round.addEventListener("mouseover", function() {
-    if (a == 1){
+    if(a == 1){
       round.style.background = get_rand_color();
-    } else {
-      round.style.background = get_black_color();
+    } else if(a == 2) {
+      round.style.background = 'black';
     };
   });
 });
