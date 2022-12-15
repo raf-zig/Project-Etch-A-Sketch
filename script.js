@@ -20,9 +20,9 @@ function get_rand_color(){
   return "#" + color ;
 };
 
-let a = 0;
-let black_color_choice = () => a = 2;
-let multicolored_color_choice = () => a =1;
+let color = '';
+let black_color_choice = () => color = 'black';
+let multicolored_color_choice = () => color = 'multicolored';
 
 function clear_color(){
   const clean = document.querySelectorAll(".grid-item");
@@ -31,9 +31,9 @@ function clear_color(){
 
 [...document.querySelectorAll(".grid-item")].forEach((round) => {
   round.addEventListener("mouseover", function() {
-    if(a == 1){
+    if(color == 'multicolored'){
       round.style.background = get_rand_color();
-    } else if(a == 2) {
+    } else if(color == 'black') {
       round.style.background = 'black';
     };
   });
