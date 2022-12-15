@@ -1,3 +1,5 @@
+let user_choice = prompt('Enter the desired grid size no more than 100', '');
+
 const container = document.getElementById("container");
 
 function makeRows(rows, cols) {
@@ -9,7 +11,7 @@ function makeRows(rows, cols) {
   };
 };
 
-makeRows(20, 20);
+makeRows(user_choice, user_choice);
 
 function get_rand_color(){
   let color = Math.floor(Math.random() * Math.pow(256, 3)).toString(16);
