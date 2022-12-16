@@ -8,12 +8,16 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Etch-A-Sketch</h1>
-    <div>Choose a color</div>
-    <button onClick="black_color_choice()">black</button>
-    <button onClick="multicolored_color_choice()">multicolored</button>
-    <button onClick="clear_color()">clear</button>
-    <div id="container"></div>
+    <div class="container">
+        <h1>Etch-A-Sketch</h1>
+        <h2>Choose a color</h2>
+        <div class="buttons">
+            <button onClick="black_color_choice()">black</button>
+            <button onClick="clear_color()">clear</button>
+            <button onClick="multicolored_color_choice()">multicolored</button>
+        </div>
+        <div id="container"></div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html> 
